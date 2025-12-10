@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confer</title>
+
+  <!--* Main CSS File -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!--* Font Awesome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--* Bootstrap link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!--* Header -->
+  <header>
+    <div id="mobile">
+      <nav class="navbar">
+        <a id="mobile-logo" class="navbar-brand" href="#">
+          <img src="./img/logo.png.webp" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">- Home</a></li>
+                  <li><a class="dropdown-item" href="#">- About Us</a></li>
+                  <li><a class="dropdown-item" href="#">- Speakers</a></li>
+                  <li><a class="dropdown-item" href="#">- Schedule</a></li>
+                  <li><a class="dropdown-item" href="#">- Tickets</a></li>
+                  <li><a class="dropdown-item" href="#">- Blog</a></li>
+                  <li><a class="dropdown-item" href="#">- Single Blog</a></li>
+                  <li><a class="dropdown-item" href="#">- Contact</a></li>
+                  <li><a class="dropdown-item" href="#">- Dropdown</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a id="nav-gradient-btn" href="#">Get Tickets
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="desktop">
+      <div class="container-fluid">
+        <a id="desktop-logo" href="#">
+          <img src="./img/logo.png.webp" alt="" />
+        </a>
+        <div class="menu">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a id="desktop-gradient-btn" href="#">Get Tickets
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--* Main  -->
+
+  <main>
+    <section class="hero">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div id="carousel-first" class="carousel-item active">
+            <img src="./img/hero.jpg" alt="" />
+            <div class="container-fluid">
+              <h1 class="hero-first">
+                Science
+                <br />
+                Conference
+              </h1>
+              <h6 class="hero-second">
+                Shangri-La Hotel, Bangkok, Bangkok, Thailand
+              </h6>
+              <a id="gradient-btn" href="#">More Information
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div id="carousel-second" class="carousel-item">
+            <img src="./img/hero-2.jpg" alt="..." />
+            <div class="container-fluid">
+              <h5 class="hero-third">The Event Consistently</h5>
+              <h2 class="hero-fourth">Osha Compliance</h2>
+              <div class="event">
+                <div class="event-date">
+                  <i class="fa-solid fa-user"></i>
+                  <span>January 14, 2019</span>
+                </div>
+                <div class="event-name">
+                  <i class="fa-solid fa-alarm-clock"></i>
+                  <span>Laura Green</span>
+                </div>
+              </div>
+              <div class="buttons">
+                <a id="gradient-btn" class="confer-btn" href="#">View More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a id="gradient-btn" class="confer-btn" href="#">Get Tickets
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container-fluid">
+        <div class="rowTop">
+          <div class="colFirst">
+            <h6>About Conference</h6>
+            <h3>Welcome To The Project Management</h3>
+            <p>
+              The Project Management is a platform to learn expert techniques
+              for building successful project teams, creating efficient plans
+              and implementing effective tracking measures to ensure your
+              projects come in on deadline and on budget. In one fast-paced,
+              well-designed day, we’ll cover all the essential elements of
+              project management.
+            </p>
+            <a id="gradient-btn" href="#" class="about-btn">
+              Interested
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="colSecond">
+            <img src="./img/about.png" alt="" />
+          </div>
+        </div>
+        <div class="rowBottom">
+          <div class="colFirst">
+            <h6>Conference Date</h6>
+            <h4>Count every second until the event</h4>
+          </div>
+          <div class="colSecond">
+            <div class="event-timer">
+              <div>
+                00
+                <span>Months</span>
+              </div>
+              <div>
+                00
+                <span>Days</span>
+              </div>
+              <div>
+                00
+                <span>Hours</span>
+              </div>
+              <div>
+                00
+                <span>Minutes</span>
+              </div>
+              <div>
+                00
+                <span>Seconds</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="speakers">
+      <div class="container-fluid">
+        <div class="speakTop">
+          <p>Our Speakings</p>
+          <h4>Who's Speaking</h4>
+        </div>
+        <div class="speakBottom">
+          <div id="speaker-info" class="first">
+            <img src="./img/4.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+          <div id="speaker-info" class="second">
+            <img src="./img/5.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+          <div id="speaker-info" class="third">
+            <img src="./img/6.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+          <div id="speaker-info" class="fourth">
+            <img src="./img/7.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+          <div id="speaker-info" class="fifth">
+            <img src="./img/8.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+          <div id="speaker-info" class="sixth">
+            <img src="./img/9.jpg" alt="" />
+            <div class="social-info">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="person-info">
+              <h5>Patricia Stanley</h5>
+              <p>Produce Lead</p>
+            </div>
+          </div>
+        </div>
+        <div class="speakButton">
+          <a class="speak-btn" href="#">
+            View all speakers
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="schedule">
+      <div class="container-fluid">
+        <div class="schedule-text">
+          <p>Our Timetable</p>
+          <h4>Schedule Plan</h4>
+        </div>
+        <div class="schedule-about">
+          <ul class="schedule-date">
+            <li>
+              <a href="#" class="schedule-days active">
+                Monday
+                <br />
+                <span>January 14, 2019</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="schedule-days">
+                Tuesday
+                <br />
+                <span>January 15, 2019</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="schedule-days">
+                Wednesday
+                <br />
+                <span>January 14, 2019</span>
+              </a>
+            </li>
+          </ul>
+          <div class="schedule-cards">
+            <div class="cardContent">
+              <div class="cardLeft">
+                <img src="./img/10.jpg" alt="" />
+                <div class="cardText">
+                  <h6>Dealing with Difficult People</h6>
+                  <p>
+                    by
+                    <span>Gary Armstrong</span>
+                    / CEO of Confer
+                  </p>
+                </div>
+              </div>
+              <div class="cardMid">
+                <p>
+                  <i class="fa-solid fa-clock"></i>
+                  12-14 Jan 2019
+                </p>
+                <p>
+                  <i class="fa-solid fa-map"></i>
+                  Mountain Resort, Phoenix, USA
+                </p>
+              </div>
+              <div class="cardRight">
+                <a id="gradient-btn" href="#">
+                  View More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="cardContent">
+              <div class="cardLeft">
+                <img src="./img/11.jpg" alt="" />
+                <div class="cardText">
+                  <h6>Crop Insurance Conference</h6>
+                  <p>
+                    by
+                    <span>Amanda Hudson</span>
+                    / CEO of Confer
+                  </p>
+                </div>
+              </div>
+              <div class="cardMid">
+                <p>
+                  <i class="fa-solid fa-clock"></i>
+                  12-14 Jan 2019
+                </p>
+                <p>
+                  <i class="fa-solid fa-map"></i>
+                  Mountain Resort, Phoenix, USA
+                </p>
+              </div>
+              <div class="cardRight">
+                <a id="gradient-btn" href="#">
+                  View More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="cardContent">
+              <div class="cardLeft">
+                <img src="./img/12.jpg" alt="" />
+                <div class="cardText">
+                  <h6>Capdm Executive Conference</h6>
+                  <p>
+                    by
+                    <span>Martha Burke</span>
+                    / CEO of Confer
+                  </p>
+                </div>
+              </div>
+              <div class="cardMid">
+                <p>
+                  <i class="fa-solid fa-clock"></i>
+                  12-14 Jan 2019
+                </p>
+                <p>
+                  <i class="fa-solid fa-map"></i>
+                  Mountain Resort, Phoenix, USA
+                </p>
+              </div>
+              <div class="cardRight">
+                <a id="gradient-btn" href="#">
+                  View More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="cardContent">
+              <div class="cardLeft">
+                <img src="./img/13.jpg" alt="" />
+                <div class="cardText">
+                  <h6>Street Food Convention</h6>
+                  <p>
+                    by
+                    <span>Jeffrey Morales</span>
+                    / CEO of Confer
+                  </p>
+                </div>
+              </div>
+              <div class="cardMid">
+                <p>
+                  <i class="fa-solid fa-clock"></i>
+                  12-14 Jan 2019
+                </p>
+                <p>
+                  <i class="fa-solid fa-map"></i>
+                  Mountain Resort, Phoenix, USA
+                </p>
+              </div>
+              <div class="cardRight">
+                <a id="gradient-btn" href="#">
+                  View More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-button">
+            <a href="#" class="schedule-btn">Download Schedule (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tickets">
+      <div class="container-fluid">
+        <div class="tickets-text">
+          <p>Choose a Ticket</p>
+          <h4>Ticket Pricing</h4>
+        </div>
+        <div class="tickets-about">
+          <div class="tickets-card">
+            <h6>1 Day Pass</h6>
+            <div class="tickets-icon">
+              <img src="img/p1.png" alt="" />
+            </div>
+            <h2 class="tickets-price"><span>$</span>59</h2>
+            <a id="gradient-btn" class="tickets-btn" href="#">Get Tickets
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="card-info">
+              <p>
+                <i class="fa-solid fa-check"></i>
+                One Day Conference Ticket
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Coffee-break
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Lunch and Networking
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Keynote talk
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Talk to the Editors Session
+              </p>
+            </div>
+          </div>
+          <div class="tickets-card">
+            <h6>Full Pass</h6>
+            <div class="tickets-icon">
+              <img src="img/p2.png" alt="" />
+            </div>
+            <h2 class="tickets-price"><span>$</span>99</h2>
+            <a id="gradient-btn" class="tickets-btn" href="#">Get Tickets
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="card-info">
+              <p>
+                <i class="fa-solid fa-check"></i>
+                One Day Conference Ticket
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Coffee-break
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Lunch and Networking
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Keynote talk
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Talk to the Editors Session
+              </p>
+            </div>
+          </div>
+          <div class="tickets-card">
+            <h6>Group Pass</h6>
+            <div class="tickets-icon">
+              <img src="img/p3.png" alt="" />
+            </div>
+            <h2 class="tickets-price"><span>$</span>199</h2>
+            <a id="gradient-btn" class="tickets-btn" href="#">Get Tickets
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="card-info">
+              <p>
+                <i class="fa-solid fa-check"></i>
+                One Day Conference Ticket
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Coffee-break
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Lunch and Networking
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Keynote talk
+              </p>
+              <p>
+                <i class="fa-solid fa-check"></i>
+                Talk to the Editors Session
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="container-fluid">
+        <div class="sponsors-text">
+          <p>Partners & Sponsors</p>
+          <h4>Official Sponsor</h4>
+        </div>
+        <div class="sponsors-logo">
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-1.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-2.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-3.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-4.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-5.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-6.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-7.png" alt="" />
+            </a>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="img/p-8.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="sponsors-slide">
+          <div id="slideFirst" class="slide-person">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <div class="slide-about">
+              <img src="img/15.jpg" alt="" />
+              <div class="slide-name">
+                <h6>Maria Hernandez</h6>
+                <p>UX Manager</p>
+              </div>
+            </div>
+          </div>
+          <div id="slideSecond" class="slide-person">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+            <div class="slide-about">
+              <img src="img/16.jpg" alt="" />
+              <div class="slide-name">
+                <h6>Jacqueline Myers</h6>
+                <p>UX Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container-fluid">
+        <div class="blog-text">
+          <p>Our Blog</p>
+          <h4>Latest News</h4>
+        </div>
+        <div class="blog-cards">
+          <div class="card">
+            <div class="card-img">
+              <img src="img/18.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <a href="#"> Street Food Convention </a>
+              <div class="card-event">
+                <a href="#">
+                  <i class="fa-solid fa-clock"></i>
+                  January 14, 2019
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  Laura Green
+                </a>
+              </div>
+              <p>
+                Street Food Convention will showcase products like Packed
+                food, beef and lamb, street food.
+              </p>
+            </div>
+            <div class="card-btn">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/19.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <a href="#">Tedx Moscow Conference</a>
+              <div class="card-event">
+                <a href="#">
+                  <i class="fa-solid fa-clock"></i>
+                  January 14, 2019
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  Laura Green
+                </a>
+              </div>
+              <p>
+                Street Food Convention will showcase products like Packed
+                food, beef and lamb, street food.
+              </p>
+            </div>
+            <div class="card-btn">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="img/20.jpg" alt="" />
+            </div>
+            <div class="card-text">
+              <a href="#"> Los Angeles Institute </a>
+              <div class="card-event">
+                <a href="#">
+                  <i class="fa-solid fa-clock"></i>
+                  January 14, 2019
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-user"></i>
+                  Laura Green
+                </a>
+              </div>
+              <p>
+                Street Food Convention will showcase products like Packed
+                food, beef and lamb, street food.
+              </p>
+            </div>
+            <div class="card-btn">
+              <a href="#">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+    </section>
+    <section class="contact">
+      <div class="container-fluid">
+        <div class="contact-text">
+          <p>Have Question?</p>
+          <h4>Contact Us</h4>
+        </div>
+        <div class="contact-about">
+          <div class="contact-info">
+            <div>
+              <p>Address:</p>
+              <h6>184 Main Collins Street</h6>
+            </div>
+            <div>
+              <p>Phone:</p>
+              <h6>(226) 446 9371</h6>
+            </div>
+            <div>
+              <p>Email:</p>
+              <h6>confer@gmail.com</h6>
+            </div>
+            <div>
+              <p>Website:</p>
+              <h6>www.confer.com</h6>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="text" id="surname" placeholder="Last Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="number" placeholder="Your Number">
+              </div>
+
+
+              <textarea name="message" id="message" placeholder="Your Message*"></textarea>
+
+              <button class="form-btn" id="gradient-btn" type="submit">
+                Send Message
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--* Footer  -->
+  <footer>
+    <div class="container-fluid">
+      <div class="footer-top">
+        <div class="footer-about">
+          <div>
+            <a href="#">
+              <img src="img/logo.png.webp" alt="">
+            </a>
+          </div>
+          <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain.</p>
+          <div class="socials">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <p>
+            <i class="fa-solid fa-map"></i>
+            184 Main Collins Street
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            (226) 446 9371
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            confer@gmail.com
+          </p>
+          <p>
+            <i class="fa-solid fa-earth-americas"></i>
+            www.confer.com
+          </p>
+        </div>
+        <div class="footer-workshops">
+          <h5>Workshops</h5>
+          <ul>
+            <li><a href="#">OSHA Compliance</a></li>
+            <li><a href="#">Microsoft Excel Basics</a></li>
+            <li><a href="#">Forum Speaker Series</a></li>
+            <li><a href="#">Tedx Moscow Conference</a></li>
+          </ul>
+        </div>
+        <div class="footer-gallery">
+          <h5>Gallery</h5>
+          <div class="gallery">
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/21.jpg" alt="">
+              </a>
+            </div>
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/22.jpg" alt="">
+              </a>
+            </div>
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/23.jpg" alt="">
+              </a>
+            </div>
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/24.jpg" alt="">
+              </a>
+            </div>
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/25.jpg" alt="">
+              </a>
+            </div>
+            <div class="gallery-pic">
+              <a href="#">
+                <img src="img/26.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="rowLeft">
+            <p>
+              Copyright © 2025 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i>
+              by <a href="">Colorlib</a>
+            </p>
+          </div>
+          <div class="rowRight">
+            <ul>
+              <li>
+                <i class="i fa-solid fa-circle"></i>
+                <a href="">Terms of Service</a>
+              </li>
+              <li>
+                <i class="i fa-solid fa-circle"></i>
+                <a href="">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+  </footer>
+
+  <a href="" id="scrollUp"></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
